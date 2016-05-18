@@ -1,0 +1,12 @@
+* /src
+  * /assets
+    * /css
+    * /fonts
+    * /icons
+    * /imgs
+    * /less
+    * /libs
+    * /locales
+* /components
+  * /appLogin
+    * /controllers

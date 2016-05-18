@@ -1,0 +1,117 @@
+.tian {
+  position: relative;
+  width: 727px;
+  height: 1011px;
+  border: 1px solid #000;
+}
+.tian .font {
+  position: absolute;
+  z-index: 100;
+  width: 22px;
+  height: 100%;
+  font-size: 35px;
+  line-height: 46px;
+  left: 89px;
+  font-family: KaiTi, STKaiti, STXingkai;
+}
+.tian .pinyin {
+  position: absolute;
+  z-index: 100;
+  width: 79px;
+  height: 100%;
+  left: 0;
+  top: 1px;
+  background: #FFF;
+}
+.tian .pinyin .h{
+
+  border-width: 1px;
+  border-color: #000;
+  width: 100%;
+  height: 14px;
+}
+.tian .pinyin .h:first-child{
+  border-style: solid none none none;
+  border-width: 0;
+  border-color: #000;
+  width: 100%;
+  height: 14px;
+}
+.tian .pinyin .h2{
+  border-style: dashed none none none;
+  height: 14px;
+  border-color: #999;
+}
+.tian .pinyin .h3{
+  border-style: solid none none none;
+  height: 15px;
+  border-color: #000;
+}
+.tian-h {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.tian-h .h {
+  border-style: none none dashed none;
+  border-width: 1px;
+  border-color: #999999;
+  width: 100%;
+  height: 22px;
+}
+.tian-h .h2 {
+  border-style: none none solid none;
+  border-color: #000;
+}
+.tian-v {
+  position: absolute;
+  top: 0;
+  left: 57px;
+  width: 100%;
+  height: 100%;
+}
+.tian-v .v {
+  display: inline-block;
+  border-style: none dashed none none;
+  border-width: 1px;
+  border-color: #999999;
+  width: 22px;
+  height: 100%;
+}
+.tian-v .v2 {
+  border-style: none solid none none;
+  border-color: #000;
+}
+.form {
+  margin-bottom: 20px;
+}
+.form textarea {
+  width: 80%;
+  height: 100px;
+  border: 1px solid #CCC;
+  font-size: 20px;
+  width: 450px;
+  height: 80px;
+}
+.list {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  width: 500px;
+}
+.list ol li {
+  font-size: 18px;
+  line-height: 180%;
+}
+ul.grade li{
+  display: inline-block;
+  margin-right: 15px;
+}
+@media print {
+  .form {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+}

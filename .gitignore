@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea
+server/node_modules
+client/node_modules
+client/target
+nohup.out
+start.log

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-ng-app="bwm">
+<head lang="en">
+    <base href="/">
+    <meta charset="UTF-8">
+    <title translate="APPLICATION_TITLE"></title>
+    <!-- build:css /css/optmized.css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/login.css"/>
+    <link rel="stylesheet" href="assets/css/header.css"/>
+    <!-- endbuild -->
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-ico" />
+</head>
+<body>
+<div class="wapper">
+    <div id="mainView" ui-view> </div>
+</div>
+
+<!-- build:js /js/optimized.js -->
+<script src="assets/libs/jquery/jquery.js"></script>
+<script src="assets/libs/moment/moment.js"></script>
+<script src="assets/libs/lodash/lodash.js"></script>
+<script src="assets/libs/underscore/underscore.js"></script>
+<script src="assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/libs/angular/angular.js"></script>
+<script src="assets/libs/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="assets/libs/angular-cookies/angular-cookies.js"></script>
+<script src="assets/libs/angular-daterangepicker/angular-daterangepicker.js"></script>
+<script src="assets/libs/angular-growl/angular-growl.js"></script>
+<script src="assets/libs/highlightjs/highlight.pack.js"></script>
+<script src="assets/libs/angular-highlightjs/angular-highlightjs.js"></script>
+<script src="assets/libs/angular-local-storage/angular-local-storage.js"></script>
+<script src="assets/libs/angular-mocks/angular-mocks.js"></script>
+<script src="assets/libs/angular-pretty-xml/angular-pretty-xml.js"></script>
+<script src="assets/libs/angular-resource/angular-resource.js"></script>
+<script src="assets/libs/angular-route/angular-route.js"></script>
+<script src="assets/libs/angular-sanitize/angular-sanitize.js"></script>
+<script src="assets/libs/angular-translate/angular-translate.js"></script>
+<script src="assets/libs/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+<script src="assets/libs/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+<script src="assets/libs/angular-ui-router/angular-ui-router.js"></script>
+
+
+<script src="bwmonitoringapp.js"></script>
+<script src="components/login/js/loginController.js"></script>
+<script src="components/dashboard/js/dashboardController.js"></script>
+<script src="components/dashboard/js/dashboardService.js"></script>
+<script src="components/dashboard/js/messageListController.js"></script>
+<script src="components/dashboard/js/messageService.js"></script>
+<script src="components/dashboard/js/activityService.js"></script>
+<script src="components/dashboard/js/activityController.js"></script>
+<!-- endbuild -->
+
+<script src="http://localhost:35729/livereload.js?snipver=1" type="text/javascript"></script>
+
+</body>
+</html>
+
