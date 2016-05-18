@@ -5,3 +5,5 @@ client/node_modules
 client/target
 nohup.out
 start.log
+client/src/main/assets/libs
+npm-debug.log

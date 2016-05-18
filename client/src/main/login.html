@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html data-ng-app="ftl.login">
+<head lang="en">
+    <base href="/">
+    <meta charset="UTF-8">
+    <title translate="APPLICATION_TITLE"></title>
+    <!-- build:css /css/optmized.css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="assets/css/login.css"/>
+    <!-- endbuild -->
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-ico" />
+</head>
+<body>
+<div class="container">
+  <header>
 
+  </header>
+  <section>
+    <form ng-submit="login()" ng-controller="LoginController">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" ng-model="login.username" name="username" id="username" placeholder="please input your username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" ng-model="login.password" name="password" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group" ng-show="login.error">
+          <div class="alert alert-danger"  ng-bind="login.error"></div>
+        </div>
+        <button type="submit" class="btn btn-default" ng-disabled="!login.username || !login.password">Submit</button>
+    </form>
+  </section>
+  <footer>
+
+  </footer>
+</div>
+<!-- build:js /js/optimized.js -->
+<script src="assets/libs/angular/angular.js"></script>
+<script src="components/login/appLogin.js"></script>
+<script src="components/login/controllers/loginController.js"></script>
+<!-- endbuild -->
+
+<script src="http://localhost:35729/livereload.js?snipver=1" type="text/javascript"></script>
+</body>
+</html>

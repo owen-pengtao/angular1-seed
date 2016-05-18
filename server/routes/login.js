@@ -23,13 +23,13 @@ var appRouter = function(app) {
     });
   });
 
-  app.get("/login", function (req, res) {
+  app.post("/login", function (req, res) {
     var deferred = Q.defer();
     var json = {
       data: "login failed",
       status: 0
     };
-    if (req.query.username === 'admin' && req.query.password === 'admin') {
+    if (req.body.username === 'admin' && req.body.password === 'admin') {
       req.session.regenerate(function(err) {
         req.session.user = req.query.username;
         json = {

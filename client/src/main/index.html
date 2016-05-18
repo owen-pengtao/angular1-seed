@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="bwm">
+<html data-ng-app="ftl">
 <head lang="en">
     <base href="/">
     <meta charset="UTF-8">
@@ -7,21 +7,21 @@
     <!-- build:css /css/optmized.css -->
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" href="assets/css/global.css"/>
-    <link rel="stylesheet" href="assets/css/login.css"/>
-    <link rel="stylesheet" href="assets/css/header.css"/>
     <!-- endbuild -->
     <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-ico" />
 </head>
 <body>
 <div class="wapper">
-    <div id="mainView" ui-view> </div>
+  <header ng-include="'components/common/templates/header.html'"></header>
+  <div id="mainView" ui-view> </div>
+  <footer>
+
+  </footer>
 </div>
 
 <!-- build:js /js/optimized.js -->
 <script src="assets/libs/jquery/jquery.js"></script>
 <script src="assets/libs/moment/moment.js"></script>
-<script src="assets/libs/lodash/lodash.js"></script>
 <script src="assets/libs/underscore/underscore.js"></script>
 <script src="assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
 <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
@@ -43,19 +43,11 @@
 <script src="assets/libs/angular-translate-loader-url/angular-translate-loader-url.js"></script>
 <script src="assets/libs/angular-ui-router/angular-ui-router.js"></script>
 
-
-<script src="bwmonitoringapp.js"></script>
-<script src="components/login/js/loginController.js"></script>
-<script src="components/dashboard/js/dashboardController.js"></script>
-<script src="components/dashboard/js/dashboardService.js"></script>
-<script src="components/dashboard/js/messageListController.js"></script>
-<script src="components/dashboard/js/messageService.js"></script>
-<script src="components/dashboard/js/activityService.js"></script>
-<script src="components/dashboard/js/activityController.js"></script>
+<script src="app.js"></script>
+<script src="components/landingPage/js/landingPage.init.js"></script>
 <!-- endbuild -->
 
 <script src="http://localhost:35729/livereload.js?snipver=1" type="text/javascript"></script>
 
 </body>
 </html>
-

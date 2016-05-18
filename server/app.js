@@ -17,9 +17,17 @@ app.use(session({
   saveUninitialized: true
 }));
 
+app.get("/auth/*", function(req, res, next) {
+  if (req.session.user) {
+    next();
+  } else {
+    res.redirect('/login');
+  }
+});
+
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:9680');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   // Request headers you wish to allow
@@ -31,17 +39,9 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/auth/*", function(req, res, next) {
-  if (req.session.user) {
-    next();
-  } else {
-    res.redirect('/login');
-  }
-});
-
 require("./routes/login.js")(app);
 require("./routes/users.js")(app);
 
-var server = app.listen(3000, function () {
+var server = app.listen(3001, function () {
   console.log("Listening on port %s...", server.address().port);
 });
